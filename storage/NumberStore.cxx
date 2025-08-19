@@ -10,7 +10,7 @@ namespace NumberStore {
     }
 
     ErrorCode NumberStore::insert(uint64_t number) {
-        int64_t timestamp;
+        int64_t timestamp = 0;
         ErrorCode result;
         
         {
