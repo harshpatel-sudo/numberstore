@@ -26,7 +26,7 @@ namespace NumberStore {
         static Config& getInstance();
         
         const std::string& getPipeName() const;
-        int getConnectionTimeout() const;
+        size_t getConnectionTimeout() const;
         size_t getMaxConnections() const;
         size_t getBufferSize() const;
         

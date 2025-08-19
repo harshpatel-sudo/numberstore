@@ -19,7 +19,7 @@ namespace NumberStore {
         return pipeName;
     }
 
-    int Config::getConnectionTimeout() const {
+    size_t Config::getConnectionTimeout() const {
         return connectionTimeout;
     }
 

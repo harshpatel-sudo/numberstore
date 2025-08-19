@@ -44,7 +44,7 @@ namespace NumberStore {
         Config& config = Config::getInstance();
 
         // Wait for named pipe to be available
-        if (!WaitNamedPipeA(name.c_str(), config.getConnectionTimeout())) {
+        if (!WaitNamedPipeA(name.c_str(), static_cast<DWORD>(config.getConnectionTimeout()))) {
             DWORD error = GetLastError();
             Logger::getInstance().error("WaitNamedPipe failed: " + std::to_string(error));
             return ErrorCode::PIPE_CONNECT_FAILED;

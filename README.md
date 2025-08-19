@@ -132,7 +132,7 @@ The system uses snapshot-based read optimization based on the assumption that re
 
 ### Start the Daemon
 ```cmd
-cd out/build/x64-Release/bin/
+cd out/build/Release/bin/
 numberstore-daemon.exe
 ```
 
@@ -145,7 +145,7 @@ Press Ctrl+C to stop the daemon.
 
 ### Run CLI Client(s)
 ```cmd
-cd out/build/x64-Release/bin/
+cd out/build/Release/bin/
 numberstore-cli.exe
 ```
 
