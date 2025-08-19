@@ -73,12 +73,15 @@ The system uses snapshot-based read optimization based on the assumption that re
 4. **Open CMakeLists.txt** when prompted (or navigate to it in Solution Explorer)
 5. **Press Ctrl+S** to save and trigger the build process
 6. Visual Studio will automatically configure and build the project in the `out` folder
-
+7. Select Debug/Release configuration from command bar.
+8. Run numberstore-daemon.exe and numberstore-cli.exe respectively in Debug/Release mode.
+9. Alternatively, you can build the project; navigate to out/build/x64-Release/bin (or out/build/x64-Debug/bin) directory and run exe manually.
+   
 #### Method 2: Using Command Line
 1. **Open Command Prompt or PowerShell**
 2. **Navigate to the project directory**:
    ```cmd
-   cd path\to\numberstore1
+   cd path\to\numberstore
    ```
 
 3. **Create output directory**:
@@ -129,7 +132,7 @@ The system uses snapshot-based read optimization based on the assumption that re
 
 ### Start the Daemon
 ```cmd
-cd build\bin\Debug
+cd out/build/x64-Release/bin/
 numberstore-daemon.exe
 ```
 
@@ -142,7 +145,7 @@ Press Ctrl+C to stop the daemon.
 
 ### Run CLI Client(s)
 ```cmd
-cd build\bin\Debug
+cd out/build/x64-Release/bin/
 numberstore-cli.exe
 ```
 
@@ -191,3 +194,4 @@ Number:Timestamp
 - Error handling and connection management
 
 All operations maintain data consistency and thread safety across concurrent access.
+
